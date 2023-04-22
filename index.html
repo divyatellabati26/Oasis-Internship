@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script type="text/javascript" src="script.js"></script>
 </head>
-<body>
-    <div class="main">
-        <div class="navbar">
-            <div class="icon">
-                <img src="Oasis Logo.jfif" class="image1"/>
-               
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">INTERNSHIPS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">FAQ'S</a></li>
+<body class="main">
+    <centre>
+        <h1>Simple Calculator using HTML, CSS and JavaScript.</h1>
+        <table border="5" class="calculator">
+         <tr>
+          <td colspan="4"><input type="text" class="box" id="result"/></td>
+         </tr>
 
-                </ul>
-            </div>
-           
-        </div>
-        <div class="content">
-            <h1>OASIS <br><span>INFOBYTE</span> </h1>
-            <p class="para">We Build IT That Build Your Business We Develop Personalized Software At Our Company, <br>
-                We Turn The Digital Dreams Of Our Clients Into A Reality. <br>
-                We Work Closely With Our Users Throughout Development To Ensure That We Are Still Aligned With Goal.<br>
-                We Are Committed To Producing Exceptional Software For Each Of Our Clients.<br>
-                
-                We At OASIS InfoByte Believe In Making Our Youth Especially The Students Self-Aware And Exploring <br>
-                The Untouched World Of Technology And Tremendous Growth-Making Fields. <br>
-                </p>
-            <p class="para"><b>Build Your IT Here</b></p>
-               <button class="button"><a href="#">GET STARTED</a></button>
-                <div class="form">
-                    <h2>Login</h2>
-                    <input type="email" name="email" placeholder="Enter Email ">
-                    <input type="password" name="" placeholder="Enter Password ">
-                    <button class="button1"><a href="#">Login</a></button>
-                    <p class="link"><b>Don't have an account</b><br>
-                    <a href="#"><b>Sign up</b> </a><b> here</b></a></p>
-                    <p class="liw"><b>Log in with</b></p>
-                    <div class="icons">
-                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+         <tr>
+           <td><input type="button" value="(" onclick="display('(')"></td>
+           <td><input type="button" value=")" onclick="display(')')"></td>
+           <td><input type="button" value="Del" onclick="del()"></td>
+           <td><input type="button" value="Clear" onclick="clearScreen()" id="btn"/></td>
+         </tr>
+
+         <tr>
+           <td><input type="button" value="1" onclick="display('1')"></td>
+           <td><input type="button" value="2" onclick="display('2')"/></td>
+           <td><input type="button" value="3" onclick="display('3')"></td>
+           <td><input type="button" value="+" onclick="display('+')"></td>
+         </tr>
+
+         <tr>
+           <td><input type="button" value="4" onclick="display('4')"></td>
+           <td><input type="button" value="5" onclick="display('5')"></td>
+           <td><input type="button" value="6" onclick="display('6')"></td>
+           <td><input type="button" value="-" onclick="display('-')"></td>
+         </tr>
+
+         <tr>
+           <td><input type="button" value="7" onclick="display('7')"></td>
+           <td><input type="button" value="8" onclick="display('8')"></td>
+           <td><input type="button" value="9" onclick="display('9')"></td>
+           <td><input type="button" value="*" onclick="display('*')"></td>
+         </tr>
+
+         <tr>
+           <td><input type="button" value="." onclick="display('.')"></td>
+           <td><input type="button" value="0" onclick="display('0')"></td>
+           <td><input type="button" value="&#8730;" onclick="sqrt()"></td>
+           <td><input type="button" value="/" id="btn1" onclick="display('/')"></td>
+         </tr>
+         <tr>
+          <td colspan="4"><input type="button" value="Ans" onclick="calculate()"></td>
+         </tr>
+        </table>
+    </centre>
+    
 </body>
 </html>

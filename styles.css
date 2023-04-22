@@ -1,241 +1,36 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.main{
+input[type="button"] {
     width: 100%;
-    background-color:yellowgreen;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-}
-.navbar{
-    width: 1100px;
-    height: 70px;
-    margin: auto;
-}
-.icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-}
-.logo{
-    color:red;
-    font-size: 35px;
-    font-family: bold;
-    padding-left: 20px;
-
-    padding-top: 10px;
-    margin-top: 5px
-}
-.menu{
-    width: 400px;
-    float: left;
-    height: 70px;
-}
-ul{
-    float: left;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-ul li{
-    list-style: none;
-    margin-left: 62px;
-    margin-top: 27px;
-    font-size: 14px;
-}
-ul li a{
-    text-decoration: none;
-    color:white;
-    font-family: Arial;
-    font-weight: bold;
-    transition: 0.4s ease-in-out;
-}
-ul li a:hover{
-    color:blueviolet;
-}
-
-.srch{
-    font-family: 'Times New Roman';
-    width: 200px;
-    height: 40px;
-    background: transparent;
-    border: 1px solid #A2CDCD;
-    margin-top: 13px;
-    color:greenyellow;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 10px;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.btn{
-    width: 100px;
-    height: 40px;
-    background: #A2CDCD;
-    border: 2px solid #A2CDCD;
-    margin-top: 13px;
-    color: #fff;
-    font-size: 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-.btn:hover{
-    color: #000;
-}
-.btn:focus{
-    outline: none;
-}
-.srch:focus{
-    outline: none;
-}
-.content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
-    color:blue;
-    position: relative;
-}
-
-.content .para{
-    padding-left: 20px;
-    padding-bottom: 25px;
-    font-family: itali;
-    letter-spacing: 1.2px;
-    line-height: 30px;
-}
-
-.content h1{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
-}
-.content .button{
-    width: 160px;
-    height: 40px;
-    background: #A2CDCD;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight:bold;
     border: none;
-    margin-bottom: 10px;
-    margin-left: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .4s ease;
-}
-.content .button a{
-    text-decoration: none;
-    color: #000;
-    transition: .3s ease;
-}
-.button:hover{
-    background-color: #fff;
-}
-.content span{
-    color:#ff0066;
-    font-size: 65px
-}
-.form{
-    width: 250px;
-    height: 380px;
-    background-color: yellow;
-    position: absolute;
-    top: -20px;
-    left: 870px;
-    transform: translate(0%,-5%);
-    border-radius: 10px;
-    padding: 25px;
-}
-.form h2{
-    width: 220px;
-    font-family: sans-serif;
-    text-align: center;
-    color:red;
-    font-size: 22px;
-    background-color:lightgreen;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 8px;
-}
-.form input{
-    width: 240px;
-    height: 35px;
-    background: transparent;
-    border-bottom: 1px solid #A2CDCD;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    color:darkmagenta;
-    font-size: 15px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-    font-family: sans-serif;
-}
-.form input:focus{
-    outline: none;
-}
-::placeholder{
-    color:darkmagenta;
-    font-family: Arial;
-}
-.button1{
-    width: 240px;
-    height: 40px;
-    background:violet;
-    border: none;
-    margin-top: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    color: orangered;
-    transition: 0.4s ease;
-}
-.button1:hover{
-    background: #fff;
-    color:violet;
-}
-.button1 a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-}
-.form .link{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
-}
-.form .link a{
-    text-decoration: none;
-    color:#ff0066;
-}
-.liw{
-    padding-top: 15px;
-    padding-bottom: 10px;
-    text-align: center;
-}
-.icons a{
-    text-decoration: none;
-    color: #fff;
-}
-.icons ion-icon{
-    color: #fff;
-    font-size: 30px;
-    padding-left: 14px;
-    padding-top: 5px;
-    transition: 0.3s ease;
-}
-.icons ion-icon:hover{
-    color:palevioletred;
-}
-.image1{
-    width:70%;
-    height:150%;
-    padding-top: 20px;
-    padding-left: 0%;
-}
+    border-radius: 5px;
+  }
+  h1{
+   margin-left: 400px;
+   color: black;
+  }
+ .box{
+     width:100%;
+     height:3em;
+     background-color:white;
+     border:0.3px solid black ;
+     color: black;
+     border-radius: 5px;
+     font-size: larger;
+     font-weight:bolder;
+  }
+  .calculator{
+     border:1px solid black;
+     height: 390px;
+     width: 420px;
+     padding: 20px;
+     margin: auto;
+     border-radius: 0.5em;
+     background-color:black;
+     border-collapse: collapse;
+  }
+  .main{
+   background-color:#ff0066;
+  }
+  
